@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box-1">
+            <p>Bill</p>
+            <input type="text" name="Bill" id="txt_bill">
+            <p>Select Tip %</p>
+            <button id="five" class="tip_btn">5%</button>
+            <button id="ten" class="tip_btn">10%</button>
+            <button id="fifteen" class="tip_btn">15%</button><br>
+            <button id="twnety_five" class="tip_btn">25%</button>
+            <button id="fifty" class="tip_btn">50%</button>
+            <input type="text" id="custom" placeholder="Custom" class="custom_tip" style="width: 60px;background-image: none;height: 29px;font-size: 15px;"> 
+            <p>Number of People</p>
+            <input type="text"name="people"id="txt_people" style="background-image: url(icon-person.svg);">
+        </div>
+        <div class="box-2">
+                <h2>Tip Amount</h2>
+                <img src="rupee.png" alt="Doller" style="margin-left: 10px; width: 18px;"><h4 id="tip_amount"></h4>
+                <p>/Person</p>
+                <h2>Total</h2>
+                <img src="rupee.png" alt="Doller" style="margin-left: 85px; width: 18px;"><h4 id="total_amount"></h4>
+                <p>/person</p>
+            <button>RESET</button>
+        </div>   
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>
